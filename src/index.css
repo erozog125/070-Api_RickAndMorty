@@ -106,3 +106,17 @@ a:active {
   padding: 1rem;
   margin: 1rem;
 }
+
+.inputCard {
+  width: 20rem;
+  height: 4rem;
+  border: groove orange 4px;
+  border-radius: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.inputCard::placeholder {
+  color: #ec2525;
+  font-style: italic;
+}

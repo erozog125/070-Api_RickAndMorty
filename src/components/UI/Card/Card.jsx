@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-export const Card = ({imageCharacter,nameCharacter}) => {
+export const Card = ({imageCharacter,nameCharacter, keyCard}) => {
   return (
-    <div className='card'>
+    <div key={keyCard} className='card'>
       <img src={imageCharacter} alt={nameCharacter} />
       <h2>{nameCharacter}</h2>
     </div>
