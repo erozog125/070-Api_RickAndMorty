@@ -1,13 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cookie&family=Fuzzy+Bubbles&family=Lobster&family=Pacifico&family=Redressed&family=Shadows+Into+Light&family=Vujahday+Script&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #030716;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+  width: 25rem;
+  height: 12rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #d5e409;
+  background-color: #576464;
+  display: flex;   
+  align-items: center; 
+  margin: 1rem;
+}
+
+.card > img {
+  width: 50%;
+  height: 100%;
+  border-radius: 15px 0 0 15px;  
+}
+
+.btnGet {
+  width: 8rem;
+  height: 3rem;
+  margin: 0.5rem;
+  border-radius: 20px;
+  border: groove 5px #24bdd8;
+  background-color: #ec9f0f;
+  box-shadow:0 0 15px #ec2525;  
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnGet:hover,
+.btnGet:focus {
+  background-color: #2dc010; 
+  box-shadow: 0 0 15px #2dc010;  
+}
+
+a {
+	box-shadow:inset 0px -3px 7px 0px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:3px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+  margin: 1rem;
+}
+a:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+a:active {
+	position:relative;
+	top:1px;
+}
+
+.div-getAll {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-getAll h2 {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: -5px -5px 0 rgb(22, 138, 6);
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.div-getAll hr {
+  width: 90vw;
+}
+
+.card > h2 {
+  text-align: center;
+  margin-left: 1rem;
+  font-size: 2rem;
+  color: #cac711;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.main-cards {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
 }
