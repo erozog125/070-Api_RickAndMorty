@@ -8,7 +8,7 @@ export const GetEveryBody = () => {
 
   const URL = "https://rickandmortyapi.com/api/character";
 
-  const [cards, setCards] = useState([{name: "Rick and Morty", image: rickandmorty}]);  
+  const [cards, setCards] = useState([]);  
 
   const getCharacters = async () => {
     await fetch(URL)
@@ -21,19 +21,20 @@ export const GetEveryBody = () => {
       <Navigator />
       <h2>Get All Character</h2>
       <hr />
-      <Card imageCharacter={cards[0].image} nameCharacter={cards[0].name} />
+      {/* <Card imageCharacter={cards[0].image} nameCharacter={cards[0].name} /> */}
       <ButtonUI
       // Vamos a proceder a dar uso a esta función que llamará el botón por medio del evento onClick
         event={getCharacters}
         txtButton="Get All Characters"
         className="btnGet"
       />
-      <main className='render.cards'>  
-        {
-          cards.map(element => {
-            // Recordemos que todo elemento que se renderiza, debe diferenciarse por medio de una key
+      <main className='render-cards'>  
+        {console.log(cards)}
+        {          
+          cards.map(element => (
+            // Recordemos que todo elemento que se renderiza, debe diferenciarse por medio de una key                       
             <Card imageCharacter={element.image} nameCharacter={element.name} />
-          })
+          ))
         }
       </main>
     </div>

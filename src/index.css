@@ -98,10 +98,11 @@ a:active {
   font-family: 'Shadows Into Light', cursive;
 }
 
-.main-cards {
+.render-cards {
   width: 100vw;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 1rem;
+  margin: 1rem;
 }
